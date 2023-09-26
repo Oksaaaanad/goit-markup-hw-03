@@ -24,7 +24,6 @@ img {
     margin-left: auto;
     margin-right: auto; 
     }
-/* Header */
 .container {
     width: 1158px;
     height: 75px;
@@ -34,7 +33,13 @@ img {
     border-bottom: 1px solid #e7e9fc;
     margin: 0 auto;
     padding: 0 15px;
+    }
+/* Header */
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
 }
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -111,6 +116,7 @@ letter-spacing: 0.32px;
 }
 
 .hero-title {
+    max-width: 496px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -297,6 +303,7 @@ letter-spacing: 0.32px;
         padding-top: 60px;
         padding-bottom: 60px;
     background-color: #2e2f42 ;
+    padding: 100px 0;
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -307,6 +314,8 @@ letter-spacing: 0.54px;
 text-transform: uppercase;
 color: #4d5ae5 ;
 line-height: 1.17;
+display: inline-block;
+margin-bottom: 16px;
 }
 .studio {
     color: #f4f4fd
@@ -317,4 +326,5 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.32px;
+max-width: 264px;
 }
