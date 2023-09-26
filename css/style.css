@@ -13,9 +13,28 @@ a {
 ul {
     list-style: none;
 }
-
+img {
+    display: block;
+}
+.box { 
+    max-width: 1440px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+    }
 /* Header */
-
+.container {
+    width: 1158px;
+    height: 75px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e9fc;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -24,12 +43,26 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-studio {
     color: #000000;
 }
-
+.nav-list {
+    display: flex;
+    text-align: center;
+    margin-left: 93px;
+    gap: 40px;
+}
+.nav {
+    display: flex;
+    align-items: center; 
+}
+.nav-list-item+.nav-list-item {
+    margin-left: 50px;
+    padding: 24px 0;
+}
 .nav-link {
     color: var(--NAVY-BLUE, #2E2F42);
 font-size: 16px;
@@ -42,7 +75,14 @@ letter-spacing: 0.32px;
 .nav-link:focus {
     color: #404bbf;
 }
+.header-contacts-list {
+    display: flex;
+    gap: 40px;
+}
 
+.contacts-item+.contacts-item {
+    margin-left: 50px;
+}
 .contacts-link {
     color: var(--SLATE, #434455);
 font-size: 16px;
@@ -60,11 +100,22 @@ letter-spacing: 0.32px;
 }
 /* Main */
 .hero {
+    height: 600px;
+    width: 1600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    background: var(--NAVY-BLUE, #2E2F42);
+     background: var(--NAVY-BLUE, #2E2F42);
+     padding: 188px 0 ;
 }
 
 .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 200px;
     color: var(--WHITE, #FFF);
 text-align: center;
 font-size: 56px;
@@ -75,14 +126,22 @@ line-height: 1.07 ;
 }
 
 .hero-button {
-color: var(--WHITE, #FFF);
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.64px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    min-width: 169px;
+    height: 56px;
+    padding: 10px 32px;
+    color: var(--WHITE, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border: none;
     border-radius: 4px;
-background: var(--IRIS, #4D5AE5);
-font-family: "Roboto", sans-serif;
+    background-color: #4d5ae5;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -92,13 +151,31 @@ font-family: "Roboto", sans-serif;
 
 
 /* Features */
+.features {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    padding: 120px 0;
+}
 
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-list-item+.features-list-item {
+    margin-left: 30px;
+    width: 265px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
 .features-name {
     color: var(--NAVY-BLUE, #2E2F42);
 font-size: 20px;
 font-weight: 500;
 line-height: 24px; 
 letter-spacing: 0.4px;
+margin-bottom: 8px;
 }
 
 .features-name-decs {
@@ -110,6 +187,11 @@ letter-spacing: 0.32px;
 }
 /* Our team */
 .team {
+    margin-top: 94px;
+        width: 1600px;
+        height: 648px;
+        margin-right: auto;
+        margin-left: auto;
     background-color: #F4F4FD;
 }
 .team-list-item {
@@ -124,7 +206,21 @@ line-height: 40px;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 line-height: 1.11;
+padding-top: 80px;
+    margin-bottom: 50px;
 }
+.team-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.team-list-item {
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: white;
+    box-shadow: 1px 3px 1px gray;
+}
+
 .team-worker {
     color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
@@ -141,8 +237,28 @@ font-size: 16px;
 font-weight: 400;
 line-height: 24px; 
 letter-spacing: 0.32px;
+/* padding: 30px 62px; */
 }
 /* Our Portfolio */
+.portfolio {
+    width: 1128px;
+        /* height: 1000px; */
+        flex-shrink: 0;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.portfolio-item > .portfolio-item {
+    flex-basis: calc( 100% / 3 - 32px );
+    width: 360px;
+    height: 420px;
+        /* padding-bottom: 0px;
+        flex-direction: column;
+        align-items: flex-start; */
+    
+}
 .port-title {
     color: var(--NAVY-BLUE, #2E2F42);
 text-align: center;
@@ -169,6 +285,11 @@ letter-spacing: 0.32px;
 }
 /* footer */
 .footer {
+    max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
     background-color: #2e2f42 ;
 }
 .footer-logo {
