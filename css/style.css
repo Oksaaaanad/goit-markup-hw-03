@@ -174,17 +174,18 @@ line-height: 1.07 ;
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
     border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-.features-list-item + .features-list-item {
+.features-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
     margin-left: 30px;
     width: 265px;
-    width: calc((100% - 72px) / 4);
 }
 .features-name {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -231,8 +232,8 @@ padding-top: 80px;
     gap: 24px;
 }
 .team-list-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
     margin-left: 30px;
-    width: calc((100% - 72px) / 4);
     background-color: white;
     box-shadow: 1px 3px 1px gray;
     border-radius: 0px 0px 4px 4px;
@@ -273,7 +274,7 @@ letter-spacing: 0.32px;
     column-gap: 24px;
     row-gap: 48px;
 }
-.portfolio-item + .portfolio-item {
+.portfolio-item {
     width: calc((100% - 48px) / 3);
     width: 360px;
     height: 420px;
@@ -320,8 +321,10 @@ letter-spacing: 0.32px;
     background-color: #2e2f42 ;
     padding: 100px 0;
 }
-.footer-logo {
+footer a {
     display: inline-block;
+}
+.footer-logo {
     margin-bottom: 16px;
     font-family: "Raleway", sans-serif;
 font-size: 18px;
