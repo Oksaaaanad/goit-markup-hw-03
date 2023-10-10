@@ -1,7 +1,5 @@
 body {
-    font-family: "Raleway", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+
     color: #434455;
     background-color:#FFFFFF ;
 }
@@ -9,37 +7,31 @@ body {
 a {
     text-decoration: none;
 }
-
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
 ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 img {
     display: block;
 }
-.box { 
-    max-width: 1440px;
-    width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto; 
-    }
 .container {
     width: 1158px;
-    height: 75px;
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #e7e9fc;
     margin: 0 auto;
     padding: 0 15px;
     }
 /* Header */
 .header {
+    margin-left: auto;
+        margin-right: auto;
     border-bottom: 1px solid #e7e9fc;
-    width: 1158px;
 }
-
+.header-container {
+    display: flex;
+}
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -57,18 +49,15 @@ img {
 .nav-list {
     display: flex;
     text-align: center;
-    margin-left: 93px;
     gap: 40px;
 }
 .nav {
     display: flex;
     align-items: center; 
 }
-.nav-list-item+.nav-list-item {
-    margin-left: 50px;
-    
-}
+
 .nav-link {
+    display: block;
     padding: 24px 0;
     color: var(--NAVY-BLUE, #2E2F42);
 font-size: 16px;
@@ -86,10 +75,9 @@ letter-spacing: 0.32px;
     gap: 40px;
 }
 
-.contacts-item+.contacts-item {
-    margin-left: 50px;
-}
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     color: var(--SLATE, #434455);
 font-size: 16px;
 font-weight: 400;
@@ -102,13 +90,12 @@ letter-spacing: 0.32px;
     color: #404bbf;
 }
 .address {
+    margin-left: auto;
     font-style: normal;
 }
 /* Main */
 .hero {
-    height: 600px;
-    width: 1600px;
-    display: block;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -122,7 +109,6 @@ letter-spacing: 0.32px;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 200px;
     color: var(--WHITE, #FFF);
 text-align: center;
 font-size: 56px;
@@ -135,7 +121,7 @@ line-height: 1.07 ;
 .hero-button {
     margin: 0 auto;
     display: block;
-    margin-top: 30px;
+    margin-top: 48px;
     min-width: 169px;
     height: 56px;
     padding: 10px 32px;
@@ -159,10 +145,6 @@ line-height: 1.07 ;
 
 /* Features */
 .features {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 94px;
-    margin-bottom: 94px;
     padding: 120px 0;
 }
 
@@ -184,8 +166,6 @@ line-height: 1.07 ;
 }
 .features-list-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
-    margin-left: 30px;
-    width: 265px;
 }
 .features-name {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -205,11 +185,6 @@ letter-spacing: 0.32px;
 }
 /* Our team */
 .team {
-    margin-top: 94px;
-        width: 1600px;
-        height: 648px;
-        margin-right: auto;
-        margin-left: auto;
     background-color: #F4F4FD;
     padding: 120px 0;
 }
@@ -223,17 +198,14 @@ line-height: 40px;
 letter-spacing: 0.72px;
 text-transform: capitalize;
 line-height: 1.11;
-padding-top: 80px;
     margin-bottom: 72px;
 }
 .team-list {
     display: flex;
-    margin-left: -30px;
     gap: 24px;
 }
 .team-list-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
-    margin-left: 30px;
     background-color: white;
     box-shadow: 1px 3px 1px gray;
     border-radius: 0px 0px 4px 4px;
@@ -262,6 +234,8 @@ letter-spacing: 0.32px;
 }
 /* Our Portfolio */
 .portfolio {
+    margin-left: auto;
+    margin-right: auto;
     width: 1128px;
         /* height: 1000px; */
         flex-shrink: 0;
@@ -276,9 +250,6 @@ letter-spacing: 0.32px;
 }
 .portfolio-item {
     width: calc((100% - 48px) / 3);
-    width: 360px;
-    height: 420px;
-    
 }
 .port-title {
     margin-bottom: 72px;
@@ -313,11 +284,6 @@ letter-spacing: 0.32px;
 }
 /* footer */
 .footer {
-    max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
     background-color: #2e2f42 ;
     padding: 100px 0;
 }
